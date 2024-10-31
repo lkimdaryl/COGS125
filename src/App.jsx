@@ -5,7 +5,6 @@ export default function App() {
 
   return (
     <div className='App'>
-      <h1>COGS125</h1>
       <Outlet />
     </div>
   )
