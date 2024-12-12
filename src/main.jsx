@@ -6,10 +6,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import ErrorPage from './pages/errorPage.jsx';
-import HomePage from './pages/homepage.jsx';
-import NewPage from './pages/newPage.jsx';
+import Home from './pages/Home/home';
 
 const router = createBrowserRouter([
   {
@@ -17,8 +15,7 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      { path: '/', element: <HomePage />} ,
-      { path: '/newPage', element: <NewPage />}
+      {path: '/', element: <Home />}
     ]
   },
 ]);
